@@ -1,0 +1,38 @@
+.card__dom {
+    width: 90vw;
+    height: 70vh;
+    padding: 0 8vw;
+}
+
+.card__dom h2 {
+    margin: 0 0 5vh 0;
+    font-size: 5vw;
+    width: 70%;
+    color: #fff;
+    border-bottom: 3px solid #CA6F1E;
+}
+
+.card__contenido {
+    width: 90vw;
+    display: flex;
+}
+
+.card__contenido-info {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__contenido img {
+    width: 25vw;
+    height: 25vw;
+    z-index: 100;
+    margin-right: 5vw;
+}
+
+.card__next {
+    color: #fff;
+    position: absolute;
+    border: none;
+    background: none;
+}

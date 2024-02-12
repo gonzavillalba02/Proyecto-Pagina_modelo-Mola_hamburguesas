@@ -1,0 +1,34 @@
+.info__dom {
+    width: 30vw;
+}
+
+.info__nombre {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    width: 15vw;
+    text-align: start;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.info__nombre::after{
+    content: "";
+    width: 110%;
+    height: 3vh;
+    background: #CA6F1E;
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+    z-index: -1;
+}
+
+.info__desc {
+    color: #B0B0B0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: .8vw;
+    margin-left: 1.5vw;
+}

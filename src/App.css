@@ -1,38 +1,95 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.progress {
+    background: #CA6F1E;
+    align-self: start;
+    width: 0%;
+    height: 2px;
+    position: fixed;
+    bottom: 5px;
+    animation: progr auto linear;
+    animation-timeline: scroll(root block);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes progr {
+  from {width: 0%;}
+  to {width: 100%;}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header__arrow {
+    position: absolute;
+    top: 80vh;
+    z-index: 50;
+    color: #fff;
+    font-size: 5vw;
+    cursor: pointer;
+    opacity: 0;
+    animation: titilar 1s infinite alternate;
+    animation-delay: 3s;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes titilar {
+    to {
+        opacity: 1;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__nav {
+    width: 96vw;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    padding: 1vh 2vw;
+    display: flex;
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.header__nav img {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.header__nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5vw;
+    width: 30vw;
+}
+
+.header__nav li {
+    list-style: none;
+    font-family:'Inter', sans-serif;
+}
+
+.header__nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#menu {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

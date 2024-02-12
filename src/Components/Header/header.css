@@ -1,0 +1,76 @@
+.header__dom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__dom h1 {
+    display: none;
+}
+
+.header {
+    padding: 5vh 5vw 9vh 5vw;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 90vw;
+}
+
+.header__logo {
+    width: 25vw;
+    position: absolute;
+    left: 5vw;
+}
+
+.header__slider-container {
+    width: 90vw;
+    height: 76vh;
+}
+
+.header__slider-container ul {
+    display: flex;
+    padding: 0;
+    width: 900vw;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.header__slider-container li {
+    list-style: none;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__slider-container img {
+    width: 30vw;
+}
+
+@keyframes slide {
+    0% {margin-left: -15vw;}
+    7% {margin-left: -15vw;}
+
+    11% {margin-left: -115vw;}
+    19% {margin-left: -115vw;}
+
+    23% {margin-left: -215vw;}
+    30% {margin-left: -215vw;}
+
+    34% {margin-left: -315vw;}
+    42% {margin-left: -315vw;}
+
+    46% {margin-left: -415vw;}
+    53% {margin-left: -415vw;}
+
+    57% {margin-left: -515vw;}
+    65% {margin-left: -515vw;}
+
+    69% {margin-left: -615vw;}
+    76% {margin-left: -615vw;}
+
+    80% {margin-left: -715vw;}
+    88% {margin-left: -715vw;}
+
+    92% {margin-left: -815vw;}
+    100% {margin-left: -815vw;}
+
+}

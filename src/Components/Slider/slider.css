@@ -1,0 +1,49 @@
+.slider__dom {
+    margin-top: 5vh;
+    height: 78vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.arrow {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 5vw;
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.no {
+    visibility: hidden;
+}
+
+.prev {
+    top: 50vh;
+}
+
+.next {
+    top: 50vh;
+    left: 88vw;
+}
+
+.slider-container {
+    width: 100vw;
+    height: 70vh;
+}
+
+.slider-container ul{
+    display: flex;
+    padding: 0;
+    width: 900vw;
+}
+
+.slider-container li {
+    list-style: none;
+    width: 100vw;
+    display: flex;
+}

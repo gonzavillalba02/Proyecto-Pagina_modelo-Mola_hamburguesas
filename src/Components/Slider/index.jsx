@@ -10,7 +10,8 @@ import triple from '../../assets/triple-royale.png';
 import barbacua from '../../assets/barbacua.png';
 import dubbel from '../../assets/dubbel.png';
 import secret from '../../assets/secret.png';
-import { IoIosArrowForward, IoIosArrowBack  } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Slider = () => {
 

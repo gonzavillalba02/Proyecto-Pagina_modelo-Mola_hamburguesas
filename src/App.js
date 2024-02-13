@@ -12,10 +12,12 @@ function App() {
   return (
     <div className="App">
       <span className='progress'></span>
-      <Header />
+      <section id='header'>
+        <Header />
+      </section>
       <a href='#menu'><IoMdArrowDropdown className="header__arrow"/></a>
         <nav className='header__nav'>
-            <img src={logo} alt="Logo Mola" />
+            <a href='#header'><img src={logo} alt="Logo Mola" /></a>
             <ul>
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#delivery">Delivery</a></li>

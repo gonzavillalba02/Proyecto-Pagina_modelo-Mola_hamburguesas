@@ -67,6 +67,10 @@
         font-size: 4.5vw;
     }
 
+    .next {
+        left: 80vw;
+    }
+
     .slider__dom, .slider-container {
         height: 55vw;
     }

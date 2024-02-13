@@ -14,17 +14,21 @@
     border: none;
     font-size: 5vw;
     position: relative;
+    top: 50vh;
     cursor: pointer;
     z-index: 100;
-    top: 50vh;
 }
 
 .no {
     visibility: hidden;
 }
 
+.prev {
+    right: 43vw;
+}
+
 .next {
-    left: 88vw;
+    left: 43vw;
 }
 
 .slider-container {
@@ -46,16 +50,21 @@
 
 @media screen and (max-width: 700px) {
 
-    .arrow {
-        top: 40vh;
-        font-size: 4vh;
+    .arrow-container {
+        display: flex;
+        justify-content: space-between;
+        width: 20vw;
+        margin-top: 5vh;
+        position: relative;
+        top: 60vh;
     }
 
-    .next {
-        left: 80vw;
+    .arrow {
+        position: initial;
     }
 
     .slider__dom, .slider-container {
+        margin: 0;
         height: 55vh;
     }
 }
@@ -64,11 +73,6 @@
 
     .arrow {
         top: 45vh;
-        font-size: 4.5vw;
-    }
-
-    .next {
-        left: 80vw;
     }
 
     .slider__dom, .slider-container {

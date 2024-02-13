@@ -316,8 +316,10 @@ const Slider = () => {
 
     return(
         <>
-        <button className= {(margin === 0 && "no") + " arrow prev"} onClick={()=> prev()}><IoIosArrowBack /></button>
-        <button className={(margin === -800 && "no") + " arrow next"} onClick={()=> next()}><IoIosArrowForward /></button>
+        <div className="arrow-container">
+            <button className= {(margin === 0 && "no") + " arrow prev"} onClick={()=> prev()}><IoIosArrowBack /></button>
+            <button className={(margin === -800 && "no") + " arrow next"} onClick={()=> next()}><IoIosArrowForward /></button>
+        </div>
             <section className="slider__dom">
                 <div className="slider-container">
                     <ul style={estilo}>

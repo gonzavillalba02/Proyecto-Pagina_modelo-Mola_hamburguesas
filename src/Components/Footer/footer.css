@@ -19,7 +19,7 @@
 
 .quality {
     position: relative;
-    left: 8vw;
+    left: 3vw;
 }
 
 .footer-img-container {
@@ -34,4 +34,38 @@
 
 .footer-img-container img {
     width: 4vw;
+}
+
+@media screen and (max-width:1200px) {
+    .footer {
+        margin-top: 3vh;
+        height: 10vh;
+    }
+
+    .footer p {
+        font-size: 1.5vmax;
+        width: 26vw;
+        text-align: center;
+    }
+
+    .footer-img-container{
+        width: 7vh;
+        height: 7vh;
+    }
+
+    .footer-img-container img {
+        width: 4.5vh;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1200px) {
+
+    .footer {
+        margin-top: 13vh;
+    }
+
+    .footer p {
+        font-size: 1.5vh;
+        width: 24vw;
+    }
 }

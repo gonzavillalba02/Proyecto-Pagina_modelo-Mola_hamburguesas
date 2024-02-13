@@ -32,3 +32,35 @@
     font-size: .8vw;
     margin-left: 1.5vw;
 }
+
+@media screen and (max-width: 1200px) {
+    .info__dom{
+        width: 35vw;
+        margin: 1vh 0;
+    }
+
+    .info__nombre{
+        font-size: 1.5vh;
+        width: 25vw;
+    }
+
+    .info__nombre::after{
+        height: .5vh;
+        bottom: -.5vh;
+    }
+
+    .info__desc{
+        font-size: .9vh;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1200px) {
+
+    .info__nombre{
+        font-size: 1.5vw;
+    }
+    
+    .info__desc{
+        font-size: .9vw;
+    }
+}

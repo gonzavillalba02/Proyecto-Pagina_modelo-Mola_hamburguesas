@@ -16,18 +16,14 @@
     position: relative;
     cursor: pointer;
     z-index: 100;
+    top: 50vh;
 }
 
 .no {
     visibility: hidden;
 }
 
-.prev {
-    top: 50vh;
-}
-
 .next {
-    top: 50vh;
     left: 88vw;
 }
 
@@ -46,4 +42,32 @@
     list-style: none;
     width: 100vw;
     display: flex;
+}
+
+@media screen and (max-width: 700px) {
+
+    .arrow {
+        top: 40vh;
+        font-size: 4vh;
+    }
+
+    .next {
+        left: 80vw;
+    }
+
+    .slider__dom, .slider-container {
+        height: 55vh;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1200px){
+
+    .arrow {
+        top: 45vh;
+        font-size: 4.5vw;
+    }
+
+    .slider__dom, .slider-container {
+        height: 55vw;
+    }
 }

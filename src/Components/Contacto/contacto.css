@@ -44,6 +44,7 @@
 
 .contacto img {
     width: 10vw;
+    opacity: 1;
 }
 
 .contacto a {
@@ -52,4 +53,30 @@
     font-family:'Inter', sans-serif;
     font-weight: 400;
     font-size: 1.5vw;
+}
+
+@media screen and (max-width: 700px) {
+    .contacto__dom h2{
+        margin-left: 10vw;
+        width: 82%;
+        font-size: 3.5vh;
+        font-weight: 600;
+    }
+
+    .hamburguesa-img{
+        width: 30vh !important;
+    }
+
+    .contacto {
+        margin-left: 8vw;
+        width: 30vw;
+    }
+
+    .contacto img {
+        width: 10vw;
+    }
+
+    .contacto a{
+        font-size: 2vw;
+    }
 }

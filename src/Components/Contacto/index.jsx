@@ -9,7 +9,7 @@ const Contacto = () => {
         <section className="contacto__dom">
             <h2>CONTACTANOS</h2>
             <div className="contacto-container">
-                <img src={mola} alt="Hamburguesa" />
+                <img src={mola} alt="Hamburguesa" className="hamburguesa-img"/>
                 <article className="contacto__info">
                     <div className="contacto">
                         <img src={wpp} alt="Whatsapp" />

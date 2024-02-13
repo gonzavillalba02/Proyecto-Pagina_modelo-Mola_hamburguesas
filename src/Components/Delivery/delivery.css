@@ -62,3 +62,42 @@
 .delivery-container img {
     width: 35vw;
 }
+
+@media screen and (max-width: 700px) {
+
+    .delivery__dom {
+        height: 53vmax;
+    }
+
+    .delivery__dom h2{
+        margin-left: 5vw;
+        width: 90%;
+        font-size: 3.5vh;
+        font-weight: 600;
+    }
+
+    .delivery-container{
+        margin-top: 10vh;
+        height: 40vh;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .delivery__info {
+        width: 60vw;
+    }
+
+    .delivery__info-p{
+        font-size: 3vh;
+    }
+
+    .delivery-container img {
+        width: 25vh;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width: 1200px){
+    .delivery__dom {
+        height: 50vw;
+    }
+}

@@ -53,6 +53,7 @@
     .arrow-container {
         display: flex;
         justify-content: space-between;
+        margin: 0 auto 0 auto;
         width: 20vw;
         margin-top: 5vh;
         position: relative;

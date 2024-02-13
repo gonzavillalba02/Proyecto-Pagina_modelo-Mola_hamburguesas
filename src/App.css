@@ -85,7 +85,7 @@
     animation-range: entry 30% cover 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100vw;
 }
 
 @keyframes reveal {
